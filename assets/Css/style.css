@@ -166,6 +166,17 @@ a {
     margin-top: 70px;
 }
 
+.client .images a {
+    display: flex;
+    align-items: center;
+    padding: 0 42px;
+    height: 91px;
+
+    border-radius: 12px;
+}
+.client .images a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
 /* =============== Guides============ */
 .guides {
     margin-top: 40px;
@@ -537,71 +548,78 @@ a {
 /* =============== Footer============ */
 .footer {
     margin-top: 55px;
-    padding: 50px 0px 58px;
+    padding: 50px 0 58px;
 }
+
 .footer .row {
     display: flex;
-    justify-content: space-between;
-    position: relative;
 }
+
+.footer .row-top {
+    column-gap: 185px;
+}
+
 .footer .heading {
-    color: #1c1c1d;
-    font-family: Lato;
-    font-size: 2rem;
+    font-family: "Lato", sans-serif;
     font-weight: 700;
+    font-size: 2rem;
+    color: #1c1c1d;
 }
-.footer .item {
-    margin-bottom: 18px;
-}
-.footer .item a {
-    color: #7a7a7e;
-    font-family: Poppins;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-.footer .item:first-child {
+
+.footer .list,
+.footer .desc {
     margin-top: 42px;
+}
+
+.footer .item {
+    margin-top: 18px;
+}
+
+.footer .item a,
+.footer .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #7a7a7e;
+    white-space: nowrap;
+}
+
+.footer .desc {
+    white-space: normal;
+    line-height: 1.75;
 }
 
 .footer .social {
     display: flex;
-}
-.footer .social img {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-}
-.footer .desc {
-    margin-top: 40px;
-    color: #7a7a7e;
-    font-family: Poppins;
-    font-size: 1.6rem;
-    font-weight: 400;
-    width: 257px;
-    line-height: 28px; /* 175% */
-}
-.footer .social {
     margin-top: 40px;
 }
-.footer .social .social-link:first-child {
-    margin-left: 0;
-}
-.footer .social .social-link {
-    margin-left: 20px;
-}
-.footer .social .social-link:hover {
-    background-color: #ebebeb;
-}
-.footer .row-bottom {
-    margin-top: 81px;
+
+.footer .social-link {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 3px;
+    background: #f9f9f9;
 }
-.footer .row-bottom .coppy-right {
-    color: #c2c2c2;
-    font-family: Poppins;
-    font-size: 1.4rem;
-    font-style: normal;
+
+.footer .social-link + .social-link {
+    margin-left: 16px;
+}
+
+.footer .social-link:hover {
+    background: #ebebeb;
+}
+
+.footer .row-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 81px;
+}
+
+.footer .copyright {
     font-weight: 400;
+    font-size: 1.4rem;
+    color: #c2c2c2;
 }
